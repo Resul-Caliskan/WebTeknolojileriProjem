@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" >
+	
+	<!-- Css -->
+	<link rel="stylesheet" href="style.css">
+	
+	
+	<!-- Ikon Kutuphanesi -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	
+	<!-- Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<!-- ----------------------------- -->
+	<title>Web Teknoloji Projesi</title>
+</head>
+<body >
+
+	<nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark ">
+
+		<div class="container">
+		
+				<a href="index.html" class="navbar-brand ">
+				<i ></i>
+				Resul Çalışkan B191210002
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+
+			 <div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto ">
+
+					<li class="nav-item active">
+						<a href="index.html" class="nav-link active  ">
+	      				Anasayfa
+	      				</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="ozgecmis.html" class="nav-link active ">
+	      				Özgeçmiş
+	      				</a>
+					</li>
+
+	      			<li class="nav-item">
+						<a href="uskup.html" class="nav-link active ">
+	      				Üsküp
+	      				</a>
+					</li>	
+
+					<li class="nav-item">
+						<a href="ilgialanim.html" class="nav-link active ">
+	      				İlgi Alanlarım
+	      				</a>
+					</li>	
+					
+					<!-- Menüdeki Dropdown -->
+					<li class="nav-item dropdown active ">
+					  <a class="nav-link dropdown-toggle active" href="#"  id="navbardrop" data-toggle="dropdown">
+						Miraslarımız
+					  </a>
+					  <div class="dropdown-menu ">
+						<a class="dropdown-item" href="yahyakemal.html">Yahya Kemal Beyatlı</a>
+						<a class="dropdown-item" href="yemekler.html">Yemekler</a>
+					  </div>
+					</li>
+					
+					<li class="nav-item">
+						<a href="iletisim.html" class="nav-link active  text-white">
+	      				İletişim
+	      				</a>
+					</li>
+
+	      			<li class="nav-item">
+						<a href="login.php" class="nav-link active  text-white">
+	      				<i class="fas fa-sign-in-alt"></i>
+	      				</a>
+					</li>	
+				</ul>	
+			</div>
+
+		</div>
+	</nav>
+		<header>
+
+		<div class=" jstyle text-light jumbotron relative "  >
+
+			<div class=" container">
+
+				<div class="col-md-6 px-0">
+			
+					<h1 style="color:black;"  class="display-5 font-italic">
+						İletişim Sayfasına Hoş Geldiniz
+					</h1>
+				</div>
+
+			</div>
+
+		</div>
+<body>
+	<div class="container">
+	
+		
+			
+				<form  action="gonder.ht.php" name="Form" onsubmit="return control()" method="POST">
+
+				<div class="form-group">
+					<label for="isim">İsim</label>
+					<input type="text" name="isim" class="form-control" placeholder="İsminizi Girin">							
+					<small class="form-text text-muted">Zorunlu alan</small>
+				</div>
+				
+				<div class="form-group">
+					<label for="soyadi">Soyad</label>
+					<input type="text" name="soyadi" class="form-control" placeholder="Soyadınızı Girin">							
+					<small class="form-text text-muted">Zorunlu alan</small>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="text" name="email" class="form-control" placeholder="Emailinizi girin.">
+					<small class="form-text text-muted">Zorunlu alan</small>
+				</div>
+				
+				<div class="form-group">
+					<label for="cinsiyet">Cinsiyet</label><br>
+					 <input type="radio" name="cinsiyet"  value="Erkek">Erkek  
+					 <br>
+					<input type="radio" name="cinsiyet"  value="Kadın">Kadın  
+					<br>
+				</div>
+
+				<div class="form-group">
+					<label for="mesaj">Mesaj</label>
+					<textarea name="mesaj" id="mesaj" rows="5" class="form-control"></textarea>
+				</div>
+
+				<button class="btn" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
+
+				<button class="btn " type="submit" id="sub">Gönder</button>
+
+				<br><br><br>
+	</div>
+		
+		
+	<br><br><br>
+	<footer class="py-3 bg-danger text-white text-center">
+		Web-Teknolojileri-Projesi © Resul Çalışkan 2021
+	</footer>
+		<!-- JAVASCRIPT -->
+    <script>
+		function control()
+		{
+			var adi = document.forms["Form"]["isim"].value;
+			if (adi == "") 
+			{
+				alert("İsim boş bırakılamaz");
+				return false;
+			}
+			
+			var soyadi = document.forms["Form"]["soyadi"].value;
+			if (soyadi == "") 
+			{
+				alert("Soyadı boş bırakılamaz");
+				return false;
+			}
+
+			var y = document.forms["Form"]["email"].value;
+			if (y == "") 
+			{
+				alert("Mail Kısmı Boş bırakılamaz");
+				return false;
+			}
+
+			var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+			if (forMail.test(y) == false) 
+			{
+				alert("Geçersiz Mail Adresi!!!");
+				return false;
+			}
+
+
+		}	
+
+    </script>	
+</body>
+</html>
