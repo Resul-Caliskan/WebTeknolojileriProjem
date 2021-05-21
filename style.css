@@ -1,0 +1,69 @@
+/* genel */
+div.jstyle
+{
+	background-color:powderblue;
+}
+/* ------------------------- */
+/* özgeçmiş */
+img.ben
+{
+	width=100%;
+	height=70%;
+	position:relative; 
+	top:60px;
+	left:-280px;
+}
+section.okullarim
+{
+	background-color:yellow;
+}
+
+section.hobiler
+{
+	background-color:darkorange;
+}
+
+section.yabanciDil
+{
+	background-color:OliveDrab ;
+}
+
+section.yazilimDilleri
+{
+	background-color:Aquamarine ;
+}
+/* ------------------------- */
+/* Slider için Css kodlarım */
+#yazi
+{
+	color:black;
+}
+#divrengi
+{
+	position:relative;
+	left:350px;
+	top:-80px;
+	width:400px;
+	background-color:powderblue;
+}
+/* resimlerli sayfa içinde küçültmek için kullandım */
+.UskupResim
+{
+		width:100%;
+		height:50%;
+}
+/* ------------------------- */
+/* iletişim sayfası */
+
+button.btn
+{
+	background-color:powderblue;
+}
+/* ilgi alanım map div için css */
+ #enlem{ background-color:powderblue; }
+ #boylam{ background-color:powderblue; }
+ #Stil{ background-color:yellow; }
+
+
+
+
